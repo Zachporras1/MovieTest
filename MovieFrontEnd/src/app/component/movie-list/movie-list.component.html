@@ -1,0 +1,23 @@
+<table>
+   
+    <tr> 
+    <th>Id</th>
+    <th>Title</th>
+    <th>Duration</th>
+    <th>Genre</th>
+    <th>Rating</th>
+    <th>Delete Movie</th>
+    </tr>
+    
+    <tr *ngFor="let movie of MovieList">
+   <td> <a href="movies/{{movie.id}}">Details</a>  {{movie.id}}</td> 
+   <td>{{movie.title}}</td>
+   <td> {{movie.duration}} Minutes</td>
+   <td>{{movie.genre}}</td>
+   <td>{{movie.rating}}</td>
+   <td> <button type="button" (click)="deleteMovies(movie.id)">Delete</button></td>
+   
+</tr>
+
+</table>
+
