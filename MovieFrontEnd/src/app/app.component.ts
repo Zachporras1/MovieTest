@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MovieFrontEnd';
+
+onSubmit(){
+  alert("hello")
+
+  return true;
+}
+
 }
